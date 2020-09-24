@@ -20,4 +20,6 @@ def fuel(n):
     return fuel_func
 
 fuels = sum([fuel(i) for i in mass])
+print("Day 1_2:")
 print(fuels)
+print("")

@@ -15,4 +15,7 @@ def fuel(mass):
   return fuel
 
 fuels = [fuel(i) for i in data]
-print(sum(fuels))
+output = sum(fuels)
+print("Day 1_1:")
+print(output)
+print("")
