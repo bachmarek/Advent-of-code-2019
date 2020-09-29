@@ -7,4 +7,6 @@
 - [x] Day 3.1
 - [x] Day 3.2
 - [x] Day 4.1
-- [ ] Day 4.2
+- [x] Day 4.2
+- [x] Day 5.1
+- [x] Day 5.2

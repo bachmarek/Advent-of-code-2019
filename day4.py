@@ -1,3 +1,4 @@
+from itertools import groupby
 first = 145852
 last = 616942
 
@@ -54,6 +55,17 @@ def Nextnumbers(L):
       None
   return next_output
 
+result_one = Nextnumbers(decreased_list)
 decreased_list = Decrease(listXX)
-result = Nextnumbers(decreased_list)
-print(len(result))
+
+# not mine
+def valid_passwords(start, end, grp_len_pred):
+  for pwd in range(start, end + 1):
+    digits = [int(d) for d in str(pwd)]
+    if digits != sorted(digits): continue
+    if grp_len_pred({len(list(n)) for d, n in groupby(digits)}):
+      yield pwd
+
+if __name__ == "__main__":
+  valid2 = list(valid_passwords(first, last, lambda g: 2 in g))
+  print(f"Part 2: {len(list(valid2))}")
